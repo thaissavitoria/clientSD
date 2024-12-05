@@ -15,7 +15,6 @@ public class Client {
     public static void main(String[] args){
         try{
             RmiInterface objRmi = (RmiInterface)Naming.lookup("rmi://127.0.0.1:6666/Servidor");
-            JOptionPane.showMessageDialog(null,objRmi.somar(100,200));
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,"Erro"+ e.getMessage());
